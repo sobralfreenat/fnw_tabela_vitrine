@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Recursos/Planos</title>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        .highlight {
+            background-color: #ffffcc;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .button-group button {
+            margin-right: 10px;
+            margin-bottom: 5px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .input-group {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+background-color: rgba(255, 255, 255, 1.0); /* Cor branca com 0% de transparência */
+ }
+
+        .input-group input[type="text"] {
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+
+        #total {
+            margin-top: 20px;
+        }
+
+        /* CSS para fixar o cabeçalho e as duas primeiras linhas */
+        thead, tbody {
+            display: block;
+background-color: rgba(255, 255, 255, 1.0); /* Cor branca com 0% de transparência */
+
+        }
+
+        tbody {
+            max-height: 400px; /* Ajuste conforme necessário */
+            overflow-y: auto;
+        }
+
+        tr {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .selecionado {
+            background-color: #4AE0C3;
+        }
+h2 {
+    background-color: rgba(255, 255, 255, 1.0); /* Cor branca com 50% de transparência */
+}
+		
+	.tabela-container {
+    background-color: rgba(255, 255, 255, 1); /* Cor branca com 50% de transparência */
+    padding: 20px; /* Adicione espaçamento interno conforme necessário */
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="tabela-container"> 
+    <!-- Sua tabela aqui -->
+
+
+    <h2>Tabela - Preencha os campos</h2>
+<br>
+    <div class="input-group">
+        <input type="text" id="seu-nome" placeholder="Seu Nome">
+        <input type="text" id="nome-empresa" placeholder="Nome da Empresa">
+        <input type="text" id="contato-empresa" placeholder="WhatsApp">
+    </div>
+
+    <table id="tabela-recursos-planos">
+        <thead>
+            <tr>
+                <th class="congelar-linha">Recursos / Planos</th>
+                <th>Start</th>
+                <th>Social</th>
+                <th>Loja</th>
+                <th>Business</th>
+                <th>Empresarial</th>
+            </tr>
+
+            <tr>
+                <th class="congelar-linha">Qtd Itens</th>
+                <th>60</th>
+                <th>90</th>
+                <th>120</th>
+                <th>240</th>
+                <th>ilimitado</th>
+            </tr>
+
+            <tr>
+                <td>Atualizações</td>
+                <td>a cada 21 dias</td>
+                <td>a cada 15 dias</td>
+                <td>a cada 7 dias</td>
+                <td>2 por semana</td>
+                <td>Ilimitado</td>
+            </tr>
+
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>Modo de Atualização</td>
+                <td>Planilha</td>
+                <td>Planilha</td>
+                <td>Planilha</td>
+                <td>Planilha</td>
+                <td>Sistema</td>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Modelo reserva automatizada por whatsapp (protege charge back)</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Promoções (qtd de produtos)</td>
+                <td>3</td>
+                <td>6</td>
+                <td>9</td>
+                <td>12</td>
+                <td>Ilimitado</td>
+            </tr>
+            <tr>
+                <td>Banner Interativo</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Sacolinha do Instagram</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>QR Code Dinâmico com rastreamento analítico, monitoramento</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Administração Assessorada</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Acesso Admin</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Padronização de imagens dos produtos (dimensões)</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✘</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <td>Mensalidade</td>
+                <td>
+                    840 <br>
+                    <button onclick="selecionarValorVitrine(event, 840)"><img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/6626ad384ec0f_FNWfreenatstoreLogoBOITAOSELECT.png" alt="Selecionar"></button>
+                </td>
+                <td>
+                    1280 <br>
+                    <button onclick="selecionarValorVitrine(event, 1280)"><img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/6626ad384ec0f_FNWfreenatstoreLogoBOITAOSELECT.png" alt="Selecionar"></button>
+                </td>
+                <td>
+                    1720 <br>
+                    <button onclick="selecionarValorVitrine(event, 1720)"><img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/6626ad384ec0f_FNWfreenatstoreLogoBOITAOSELECT.png" alt="Selecionar"></button>
+                </td>
+                <td>
+                    2500 <br>
+                    <button onclick="selecionarValorVitrine(event, 2500)"><img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/6626ad384ec0f_FNWfreenatstoreLogoBOITAOSELECT.png" alt="Selecionar"></button>
+                </td>
+                <td>
+                    4500 <br>
+                    <button onclick="selecionarValorVitrine(event, 4500)"><img src="https://d1yei2z3i6k35z.cloudfront.net/3119789/6626ad384ec0f_FNWfreenatstoreLogoBOITAOSELECT.png" alt="Selecionar"></button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <div id="subtotal-vitrine"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="6">
+                    <div id="total"></div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <script>
+        let vitrineSelecionado = null;
+
+        function selecionarValorVitrine(event, valor) {
+            if (vitrineSelecionado) {
+                vitrineSelecionado.classList.remove('selecionado');
+            }
+            vitrineSelecionado = event.target.parentElement;
+            vitrineSelecionado.classList.add('selecionado');
+
+            const nome = document.getElementById('seu-nome').value;
+            const empresa = document.getElementById('nome-empresa').value;
+            const contato = document.getElementById('contato-empresa').value;
+
+            if (nome && empresa && contato) {
+                const planoSelecionado = vitrineSelecionado.parentElement.firstElementChild.textContent;
+                const valorPlano = valor;
+                const confirmacao = confirm(`Confirma o envio da seleção?\nSeu Nome: ${nome}\nEmpresa: ${empresa}\nContato: ${contato}\nPlano Selecionado: ${planoSelecionado} - Valor: R$${valorPlano},00`);
+                if (confirmacao) {
+                    enviarParaWhatsApp(nome, empresa, contato, planoSelecionado, valorPlano);
+                }
+            } else {
+                alert("Por favor, preencha todos os campos de entrada.");
+            }
+        }
+
+        function enviarParaWhatsApp(nome, empresa, contato, planoSelecionado, valorPlano) {
+            const mensagemPredefinida = `Olá, envio abaixo o plano que mais se adequa ao meu caso.\nSeu Nome: ${nome}\nEmpresa: ${empresa}\nContato: ${contato}\nPlano Selecionado: ${planoSelecionado} - Valor: R$${valorPlano},00`;
+            const mensagemEncoded = encodeURIComponent(mensagemPredefinida);
+            window.open(`https://wa.me/+5511911595028?text=${mensagemEncoded}`);
+        }
+    </script>
+</body>
+
+</html>
